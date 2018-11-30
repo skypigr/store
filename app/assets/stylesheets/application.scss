@@ -47,6 +47,18 @@
         padding: 1em 2em;
         width: 13em;
         background: #9c947a;
+
+        form, div {display: inline;}
+        input {font-size: small}
+        #cart {font-size: small;
+            color: white;
+            table {
+                border-top: 1px dotted #599;
+                border-bottom: 1px dotted #599;
+                margin-bottom: 10px;
+            }
+    }
+
         ul {
             padding: 0;
             li {
