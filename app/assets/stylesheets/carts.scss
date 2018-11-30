@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .carts {
-    .item_price, .total_line { text-align: right}
-    .total_line .total_cell { font-weight: bold; border-top: 1px solid #599}
+    .item_price, .total_line { text-align: right;color: #599;}
+    .total_line .total_cell { 
+        
+        font-weight: bold; 
+        border-top: 1px solid #599
+    }
 }

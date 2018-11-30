@@ -38,18 +38,18 @@
 #columns {
     background: #9c947a;
     #main {
-        margin-left: 17em;
+        margin-left: 18em;
         padding: 1em;
         background: white;
     }
     #side {
         float: left;
         padding: 1em 2em;
-        width: 13em;
+        width: 14em;
         background: #9c947a;
 
         form, div {display: inline;}
-        input {font-size: small}
+        input {font-size: small;}
         #cart {font-size: small;
             color: white;
             table {
@@ -57,7 +57,7 @@
                 border-bottom: 1px dotted #599;
                 margin-bottom: 10px;
             }
-    }
+        }
 
         ul {
             padding: 0;
