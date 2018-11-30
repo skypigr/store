@@ -3,7 +3,7 @@
 
 <ul>
     <% @cart.lineitems.each do |item| %>
-        <li><%= item.quantity %>- <%= item.product.name %></li>
+        <li><%= item.quantity %> - <%= item.product.name %></li>
     <%end%>
 </ul>
 
