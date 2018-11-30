@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :carts
   resources :products
   get 'shopper/index'
   get 'shopper' , to: 'shopper#index'
