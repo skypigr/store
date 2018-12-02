@@ -35,8 +35,11 @@ class LineitemsController < ApplicationController
 
     respond_to do |format|
       if @lineitem.save
-        format.html { redirect_to shopper_url, notice: 'Lineitem was successfully created.' }
+        format.html { redirect_to shopper_url}
+        # response to ajax request, by default, it will look for 'create' view to render
+        format.js
         format.json { render :show, status: :created, location: @lineitem }
+        
       else
         format.html { render :new }
         format.json { render json: @lineitem.errors, status: :unprocessable_entity }
