@@ -57,6 +57,12 @@
                 border-bottom: 1px dotted #599;
                 margin-bottom: 10px;
             }
+            .item_price, .total_line { text-align: right;color: white;}
+            .total_line .total_cell { 
+                
+                font-weight: bold; 
+                border-top: 1px solid #599
+            }
         }
 
         ul {
