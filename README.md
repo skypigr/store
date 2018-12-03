@@ -1,24 +1,32 @@
-# README
+# Online Store
+SCU COEN278 Assignment 3
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Clone this project
+``` 
+git clone git@github.com:skypigr/store.git
+```
 
-Things you may want to cover:
+## Live Demo:
+https://rails-onlinestore.herokuapp.com/
 
-* Ruby version
+# Run
+```
+cd store
+bundle install
+rails server
+```
 
-* System dependencies
+## Database creation
+```rails db:migrate```
+## Database initialization
+```rails db:seed```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Deployment instructions
+```
+1. heroku create
+2. git push heroku master
+3. heroku run rails db:migrate
+4. heroku run rails db:seed
+```
+## Contact Me
+Email: skypigr@gmail.com

@@ -31,3 +31,10 @@ Product.create([
         price: 62.99
     }
 ])
+
+User.create([
+    {
+        name: 'admin',
+        password: '123456'
+    }
+])
