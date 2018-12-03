@@ -9,8 +9,10 @@ Rails.application.routes.draw do
   resources :users
   resources :orders
   resources :lineitems
+  # resources :carts, except: [:index]
   resources :carts
   resources :products
+  
   get 'shopper/index'
   get 'shopper' , to: 'shopper#index'
   root 'shopper#index', as: 'root'
