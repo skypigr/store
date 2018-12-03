@@ -1,6 +1,7 @@
 class AccessController < ApplicationController
   include CurrentCart
   before_action :set_cart
+  skip_before_action :authorize
   def new
     if session[:user_id]
       redirect_to admin_url, notice: "already logged on"
