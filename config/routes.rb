@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
-  get 'access/new'
-  get 'access/create'
-  get 'access/destroy'
-  get 'admin/index'
+
   get 'admin', to: "admin#index"
+
   get 'login', to: "access#new"
+  post 'login', to: 'access#create'
+  delete 'logout', to: 'access#destroy'
+
   resources :users
   resources :orders
   resources :lineitems

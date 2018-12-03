@@ -7,7 +7,7 @@
         <fieldset>
             <legend>Please Log In</legend>
             <div>
-                <%= label_tag :name, 'Name:' %><br>
+                <%= label_tag :name, 'Name:' %><p>
                 <%= text_field_tag :name, params[:name] %>
             </div>
             <div>
@@ -15,7 +15,7 @@
                 <%= password_field_tag :password, params[:password] %>
             </div>
             <div>
-                <%= submit_tag "Login" %>
+                <%= submit_tag "Login"%>
             </div>
         </fieldset>
     <% end %>
