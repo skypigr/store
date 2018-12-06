@@ -13,10 +13,10 @@ https://rails-onlinestore.herokuapp.com/
 ## Database initialization
 ```rails db:seed```
 
-# Run
+# Run(local)
 ```
 cd store
-bundle install
+bundle install --without production
 rails server
 ```
 
@@ -29,7 +29,7 @@ rails server
 ```
 
 ## Test account
-```admin:admin```
+```admin:123456```
 
 ## Contact Me
 Email: skypigr@gmail.com
