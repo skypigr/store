@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'search', to: 'search#new'
+  post 'search', to: "search#create"
+
   get 'admin', to: "admin#index"      # admin_path
   get 'login', to: "access#new"       # login_path
   post 'login', to: 'access#create' 
