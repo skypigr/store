@@ -11,10 +11,20 @@ class SearchController < ApplicationController
   def create
     @keyword = params[:keyword]
     key = @keyword.downcase
-    @products = Product.where('description like ? or name like ? or price like ?',
-    %{%#{key}%},
-    %{%#{key}%},
-    %{%#{key}%})
+
+    # if keywords contains nondigit char, we don't want to search price, because 
+    # that's no chance to find a match there
+    if /[^\d\.]/ =~ key
+      @products = Product.where('description like ? or name like ?',
+      %{%#{key}%},
+      %{%#{key}%}
+      )
+    else
+      @products = Product.where('description like ? or name like ? or price like ?',
+      %{%#{key}%},
+      %{%#{key}%},
+      %{%#{key}%})
+    end
 
     # render "search#new" directly, in this way, action "new" will not be excuted, so
     # @keywork and @product will not be overwritten, that's what we want
