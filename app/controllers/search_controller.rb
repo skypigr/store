@@ -20,10 +20,10 @@ class SearchController < ApplicationController
       %{%#{key}%}
       )
     else
-      @products = Product.where('description like ? or name like ? or price like ?',
+      @products = Product.where('description like ? or name like ? or price = ?',
       %{%#{key}%},
       %{%#{key}%},
-      %{%#{key}%})
+      key)
     end
 
     # render "search#new" directly, in this way, action "new" will not be excuted, so
