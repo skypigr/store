@@ -3,11 +3,15 @@ SCU COEN278 Assignment 3
 
 ## Clone this project
 ``` 
-git clone git@github.com:skypigr/store.git
+https://github.com/skypigr/store
 ```
-
 ## Live Demo:
 https://rails-onlinestore.herokuapp.com/
+
+## Database creation
+```rails db:migrate```
+## Database initialization
+```rails db:seed```
 
 # Run
 ```
@@ -16,11 +20,6 @@ bundle install
 rails server
 ```
 
-## Database creation
-```rails db:migrate```
-## Database initialization
-```rails db:seed```
-
 ## Deployment instructions
 ```
 1. heroku create
@@ -28,5 +27,9 @@ rails server
 3. heroku run rails db:migrate
 4. heroku run rails db:seed
 ```
+
+## Test account
+```admin:admin```
+
 ## Contact Me
 Email: skypigr@gmail.com

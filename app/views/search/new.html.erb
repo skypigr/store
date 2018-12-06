@@ -2,7 +2,7 @@
 
 <div class="search-group">
  <%= form_tag do %>
-        <%= text_field_tag :keyword, params[:keywork], {value:"#{@keyword}", class:"search-input"} %>
+        <%= text_field_tag :keyword, params[:keyword], {value:"#{@keyword}", class:"search-input"} %>
     <%= button_to "Search", class:"search-btn"%>
 <% end %>
 </div>
