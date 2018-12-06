@@ -10,7 +10,7 @@ class SearchController < ApplicationController
 
   def create
     @keyword = params[:keyword]
-    key = @keyword.downcase
+    key = @keyword.strip.downcase
 
     # if keywords contains nondigit char, we don't want to search price, because 
     # that's no chance to find a match there
