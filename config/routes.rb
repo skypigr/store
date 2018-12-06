@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'contacts/index'
+  get 'news/index'
+  get 'question', to: "question#index"
   get 'search', to: 'search#new'
   post 'search', to: "search#create"
 

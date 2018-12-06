@@ -13,13 +13,16 @@
     width: 90px;
     height: 110px;
     }
+    .show_big_image {
+        height: 600px;
+    }
     .list_description {
     width: 80%;
     dl {
-    margin: 0;
+      margin: 0;
     }
     dt {
-    color: #244;
+      color: #244;
     font-weight: bold;
     font-size: larger;
     }
