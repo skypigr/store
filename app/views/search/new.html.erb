@@ -1,9 +1,9 @@
 <h1>Search</h1>
- <%= form_tag do %>
-    <div class="search_div">
-        <%= text_field_tag :keyword, params[:keywork], {value:"#{@keyword}", class:"search_input"} %>
-    </div>
-    <%= button_to "Search", class: "search_btn"%>
-<% end %>
 
+<div class="search-group">
+ <%= form_tag do %>
+        <%= text_field_tag :keyword, params[:keywork], {value:"#{@keyword}", class:"search-input"} %>
+    <%= button_to "Search", class:"search-btn"%>
+<% end %>
+</div>
 <%= render "shopper/form", products: @products %>

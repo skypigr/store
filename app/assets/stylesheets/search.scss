@@ -9,13 +9,21 @@
     color: #226;
     border-bottom: 3px dotted #77d;
     }
-    
-    .search_div {
-        overflow: hidden;
-    }
-    .search_btn { 
-        float: right;
-        width: auto;
+
+    .search-group {
+        padding-top: 0.25em;
+        input[type="text"] {
+            height: 15px;
+            width: 50%;
+        }
+        input[type="submit"] {
+            padding-top: 3px;
+            padding-left: 5px;
+        }
+        input[type="submit"]:hover{
+            color: rgb(5, 151, 54);
+            font-weight: bold;
+        }
     }
     form div {
             display: inline;
